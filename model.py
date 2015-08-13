@@ -74,17 +74,11 @@ def connect_to_db(app):
     db.init_app(app)
 
 def seed_users():
-    l = User(email = 'lindsay@gmail.com',
-            password = 'abc',
-            phone = '+16617946615')
-    db.session.add(l)
-
-    n = User(email = 'natalie@gmail.com',
-            password = 'abc',
-            phone = '+14157024046')
-    db.session.add(n)
-
+    """
+    db.session.add(new_user)
+    
     db.session.commit()
+    """
 
 if __name__ == "__main__":
     from server import app
